@@ -1,0 +1,133 @@
+﻿@model List<DanceTimeApp.Models.Direction>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>DanceTime</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        main {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            margin-top: 0;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        .card {
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            width: 300px;
+            text-align: center;
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><a href="schedule" style="font-size: 23px">Расписание</a></li>
+    <li><a href="records" style="font-size: 23px">Мои записи</a></li>
+    <li><a href="trainers" style="font-size: 23px">Тренеры</a></li>
+    <li style="margin-left: 13%"><a href="main"><h2 style="font-family:amaze;">DanceTime</h2></a></li>
+    <li style="float:right"><a class="active" href="signin" style="font-size: 23px">Войти</a></li>
+</ul>
+
+<main>
+    <h2>Добро пожаловать в нашу студию танцев!</h2>
+    <p>Мы предлагаем широкий выбор направлений для любого уровня подготовки и возраста. Наши профессиональные преподаватели помогут вам раскрыть свой танцевальный потенциал и насладиться движением в ритме музыки.</p>
+    <section>
+        <div class="card">
+            <img src="https://ivara.ru/images/new/napravleniya/tango.png" alt="Танго">
+            <h3>Танго</h3>
+            <p>Парный социальный танец свободной композиции, исполняемый под характерную музыку.</p>
+        </div>
+        <div class="card">
+            <img src="https://sun9-30.userapi.com/impf/c845021/v845021586/12b793/hY0hCS0B3Xk.jpg?size=798x1475&quality=96&sign=5bdffa63f17a6d89a63292eb584b0b2b&type=album" alt="Belly Dance" style="height:430px">
+            <h3>Belly Dance</h3>
+            <p>Танец живота - танец, возникший в Египте. В нем представлены движения бедер и туловища.</p>
+        </div>
+        <div class="card">
+            <img src="https://relax.com.ua/wp-content/media/kiew/2013/10/herodiade_elizabeth_018_cropped.jpg" alt="Контемпорари" style="height:340px">
+            <h3>Контемпорари</h3>
+            <p>Современный сценический танец, включающий в себя самые различные направления и техники, заимствованные из джаз-танца, йоги, восточных единоборств.</p>
+        </div>
+        <div class="card">
+            <img src="https://fallaway.ru/images/Foto/sv.jpg" alt="Вальс">
+            <h3>Вальс</h3>
+            <p>Парный танец, основанный на плавном кружении в сочетании с поступательным движением.</p>
+        </div>
+        <div class="card">
+            <img src="https://avatars.mds.yandex.net/get-afishanew/35821/b398e1969bdbe8bc368f57c89d826a51/orig" alt="Балет" style="height:250px; width: 270px">
+            <h3>Балет</h3>
+            <p>Балет - это танец красоты и грации, который позволяет раскрыть свой внутренний мир и почувствовать гармонию.</p>
+        </div>
+        <div class="card">
+            <img src="https://sun9-19.userapi.com/impf/c629218/v629218807/12d03/N1fiG5aEtgU.jpg?size=682x1024&quality=96&sign=383b85fd7c2e8935d708b1b402b6d290&type=album" alt="Фламенко">
+            <h3>Фламенко</h3>
+            <p>Испанский танец страсти.</p>
+        </div>
+        <div class="card">
+            <img src="https://www.buro247.ru/thumb/670x830_5/local/images/buro/110609-c_0078_jpg_1343908524.jpg" alt="Vogue">
+            <h3>Vogue</h3>
+            <p>Стиль танца, базирующийся на модельных позах и подиумной походке.</p>
+        </div>
+        <div class="card">
+            <img src="https://naked-science.ru/wp-content/uploads/2016/04/article_top-10-new-hip-hop-songs-April-2015.jpg" alt="Хип-Хоп" style="height:210px; width: 300px">
+            <h3>Хип-Хоп</h3>
+            <p>Относится к уличным танцевальным стилям, в основном сопровождаемый хип-хоп-музыкой и той, которая развивалась как часть хип-хоп-культуры.</p>
+        </div>
+    </section>
+</main>
+</body>
+</html>
